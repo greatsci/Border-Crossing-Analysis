@@ -34,7 +34,7 @@ for item in sortedlst:
     temp2 = tuple([item[0], item[2]])
     # avgcnt = [item[3], 0]
     if temp2 in avgDict:
-        item[4] =  round(avgDict[temp2][0] / avgDict[temp2][1])
+        item[4] =  round(avgDict[temp2][0] / avgDict[temp2][1], 0)
         avgDict[temp2] = [(item[3] +  avgDict[temp2][0]), avgDict[temp2][1] + 1]
     else:
         # Python3 always rounds x.5 to the nearst even number (like 2.5 to 2). Therefore a small residue is added to the total value before calculating the average
