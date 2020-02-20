@@ -1,5 +1,6 @@
 import csv
-f = open("./insight_testsuite/tests/test_1/input/Border_Crossing_Entry_Data.csv")
+import sys
+f = open(sys.argv[1])
 csv_f = csv.reader(f)
 myDict = {}
 # Use flag to avoid title line
@@ -35,13 +36,13 @@ for item in sortedlst:
         avgDict[temp2] = [item[3] + 1e-10, 1]
 
 sortedlst = sorted(lst, key = lambda x : (x[1], x[3], x[2], x[0]), reverse = True)
-# print(sortedlst)
+print(sortedlst)
 
 results = [['Border', 'Date', 'Measure', 'Value', 'Average']]
 for res in sortedlst:
     results.append(res)
-print(results)
+# print(results)
 
-with open("./insight_testsuite/tests/test_1/output/output.csv", "w", newline = "") as f:
+with open(sys.argv[2], "w", newline = "") as f:
     cw = csv.writer(f)
     cw.writerows(r for r in results)
