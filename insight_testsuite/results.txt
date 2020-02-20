@@ -1,3 +1,0 @@
-[Thu, Feb 20, 2020  1:05:27 PM] 0 of 1 tests passed
-[Thu, Feb 20, 2020  1:17:57 PM] 0 of 1 tests passed
-[Thu, Feb 20, 2020  5:19:52 PM] 1 of 1 tests passed
