@@ -45,6 +45,7 @@ sortedlst = sorted(lst, key = lambda x : (x[1], x[3], x[2], x[0]), reverse = Tru
 # Add header line
 results = [['Border', 'Date', 'Measure', 'Value', 'Average']]
 for res in sortedlst:
+    res[-1] = round(res[-1])
     results.append(res)
 
 with open(sys.argv[2], "w", newline = '') as f:
