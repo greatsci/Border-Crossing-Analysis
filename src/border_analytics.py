@@ -47,6 +47,6 @@ results = [['Border', 'Date', 'Measure', 'Value', 'Average']]
 for res in sortedlst:
     results.append(res)
 
-with open(sys.argv[2], "w") as f:
+with open(sys.argv[2], "w", newline = '') as f:
     cw = csv.writer(f)
     cw.writerows(r for r in results)
