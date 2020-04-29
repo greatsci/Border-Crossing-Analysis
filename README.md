@@ -1,6 +1,5 @@
 # Border Crossing Analysis
-## NingZhang Insight data challenge 2020
- 
+
 ## Description
 The Bureau of Transportation Statistics regularly makes available data on the number of vehicles, equipment, passengers and pedestrians crossing into the United States by land.
 
