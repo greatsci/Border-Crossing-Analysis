@@ -6,7 +6,7 @@ The Bureau of Transportation Statistics regularly makes available data on the nu
 The python script in ./src calculates the total number of times vehicles, equipment, passengers and pedestrians cross the U.S.-Canadian and U.S.-Mexican borders each month. It also gives the running monthly average of total number of crossings for that type of crossing and border.
 
 ## Link submitted
-https://github.com/greatsci/NingZhang2020
+https://github.com/greatsci/Border-Crossing-Analysis
 
 ## Repo directory structure
 
